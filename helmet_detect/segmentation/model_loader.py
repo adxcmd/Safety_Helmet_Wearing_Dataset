@@ -1,0 +1,11 @@
+import torch
+from ultralytics import YOLO
+from helmet_detect.segmentation.models.trash_model import trash_model_path
+
+
+class ModelLoader:
+    def __init__(self, device: torch.device):
+        self.model = YOLO(trash_model_path).to(device)
+
+    def get_model(self) -> YOLO:
+        return self.model
