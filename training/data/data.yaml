@@ -1,0 +1,13 @@
+train: D:/Proyectos/helmet_detect/training/data/train/
+val: D:/Proyectos/helmet_detect/training/data/valid/
+test: D:/Proyectos/helmet_detect/training/data/test/
+
+nc: 1
+names: ['1']
+
+roboflow:
+  workspace: custommodeltrain-plewr
+  project: safety_helmet-3tsat
+  version: 1
+  license: CC BY 4.0
+  url: https://universe.roboflow.com/custommodeltrain-plewr/safety_helmet-3tsat/dataset/1
